@@ -42,4 +42,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    //Relationship to City
+    public function users() {
+        return $this->belongsTo(City::class);
+    }
 }
