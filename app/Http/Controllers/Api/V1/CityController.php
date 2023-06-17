@@ -12,7 +12,7 @@ class CityController extends Controller
 {
     public function index()
     {
-        $Cities = City::paginate(10); 
+        $Cities = City::all(); 
         return response()->json([
             'status' => true,
             'data' => $Cities
