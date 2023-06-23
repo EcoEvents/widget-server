@@ -45,6 +45,6 @@ class User extends Authenticatable
 
     //Relationship to City
     public function users() {
-        return $this->belongsTo(City::class);
+        return $this->HasToMany(City::class);
     }
 }
